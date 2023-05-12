@@ -16,7 +16,7 @@
                 Descrição do produto
             </p>
         </div>
-        <div class="produto em-destaque">
+        <div class="produto">
             <img class="produto__imagem" src="https://via.placeholder.com/100x100">
             <h4 class="produto__nome">Nome do produto</h4>
             <p class="produto__descricao">
@@ -32,12 +32,13 @@
         </div>
     </div>
     <script>
-        const accordions = document.querySelectorAll('.produto__descricao');
+        const accordions = document.querySelectorAll('.produto');
         for (let i = 0; i < accordions.length; i++) {
             accordions[i].addEventListener('click', function(evento) {
                 evento.target.parentNode.classList.toggle('produto__descricao--em-destaque');
             })
-        }
+        } 
+        
     </script>
 </body>
 </html>
